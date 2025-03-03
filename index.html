@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="TAB.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Students Information 🌸</h1>
+        <table>
+            <caption>Names List Of PMU Female STDS</caption>
+            <tr>
+                <th>First Name</th>
+                <th>Major</th>
+                <th>Gender</th>
+                <th colspan="2"> Weight , height</th>
+            </tr>
+        
+            <tr>
+                <td>Razan</td>
+                <td>Software Engineering</td>
+                <td>Female</td>
+                <td>61</td>
+                <td>157cm</td>
+            </tr>
+        </table>
+
+        <h2>Register Here 🎀</h2>
+        <form action="action_page.php" method="post">
+            <div class="input-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" placeholder="Razan" required>
+            </div>
+
+            <div class="input-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" placeholder="Snowy">
+            </div>
+
+            <div class="input-group">
+                <label for="pass">Password</label>
+                <input type="password" id="pass" name="pass" maxlength="12" required>
+            </div>
+
+            <div class="buttons">
+                <input type="reset" value="Reset">
+                <input type="submit" id="sub" class="submit-btn" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

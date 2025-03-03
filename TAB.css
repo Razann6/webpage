@@ -1,0 +1,148 @@
+/* استايل عام */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('flow.gif');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* الحاوية */
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* تأثير عند التحويم */
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* العناوين */
+h1, h2 {
+    color: rgb(153, 0, 76);
+    text-shadow: 1px 1px 4px rgba(255, 182, 193, 0.8);
+}
+
+/* الجدول */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* ألوان الصفوف */
+tr:nth-child(odd) {
+    background-color: #ffebf0;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(218, 200, 230);
+}
+
+/* كابتشن الجدول */
+caption {
+    background-color: rgb(255, 220, 230);
+    padding: 8px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+/* تنسيق الإدخالات */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    color: rgb(153, 0, 76);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ffb6c1;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* تأثير عند التركيز على الإدخال */
+input:focus {
+    border-color: rgb(255, 105, 180);
+    box-shadow: 0px 0px 6px rgba(255, 105, 180, 0.5);
+}
+
+/* الباسوورد */
+#pass {
+    color: rgb(1, 83, 155);
+}
+
+/* الأزرار */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="reset"], .submit-btn {
+    width: 48%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+/* زر الريسيت */
+input[type="reset"] {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* زر الإرسال - وردي بتدرج */
+.submit-btn {
+    background: linear-gradient(135deg, pink, rgb(255, 105, 180));
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(255, 105, 180, 0.3);
+}
+
+/* تأثير عند التحويم */
+.submit-btn:hover {
+    background: linear-gradient(135deg, rgb(255, 105, 180), rgb(255, 20, 147));
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 10px rgba(255, 20, 147, 0.4);
+}
+
+/* تأثير زر الريسيت عند التحويم */
+input[type="reset"]:hover {
+    background-color: #f5c6cb;
+    transform: translateY(-2px);
+}
